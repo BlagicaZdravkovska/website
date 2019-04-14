@@ -114,6 +114,14 @@
             margin-right: 0.4rem;
             vertical-align: text-bottom;
         }
+        .navbar-menu{
+            background: #670360;
+        }
+        @media screen and (min-width: 1023px){ 
+            .navbar-menu {
+                background: none;
+            }
+        }
     </style>
 </head>
 
@@ -327,7 +335,7 @@
                 <div class="content has-text-centered">
                     <p>
                        
-                       Portfolio @ 2018
+                       Portfolio @  <span id="year">2018</span>
                     </p>
                 </div>
             </div>
@@ -350,6 +358,7 @@
             });
         })();
         lightGallery(document.getElementById('lightgallery'));
+        document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 
 </body>
