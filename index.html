@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 
 <head>
     <meta charset="UTF-8">
@@ -122,6 +122,9 @@
                 background: none;
             }
         }
+        .is-fixed-top{
+            background: #670360 !important;
+        }
     </style>
 </head>
 
@@ -131,7 +134,7 @@
 
         <section class="hero is-landing is-large">
             <div class="hero-head">
-                <nav class="navbar">
+                <nav class="navbar is-fixed-top">
                     <div class="container">
                         <div class="navbar-brand">
                             <!--<a class="navbar-item">
@@ -145,13 +148,13 @@
                         </div>
                         <div id="mainNavbar" class="navbar-menu">
                             <div class="navbar-end">
-                                    <a class="navbar-item">
+                                    <a  href="#exhibition" class="navbar-item">
                                             Exhibition
-                                        </a>
+                                        </a> 
                                 <a class="navbar-item">
                                     ArtWork
                                 </a>
-                                <a class="navbar-item">
+                                <a href="#aboutMe" class="navbar-item">
                                     About Me
                                 </a>
                                <!-- <span class="navbar-item">
@@ -188,7 +191,7 @@
 
 
         <section class="bg-light">
-            <div class="container section">
+            <div class="container section" id='exhibition'>
                 <div class="content has-text-centered">
                     <h1>Nuance Art Gallery - Exhibition</h1>
                 </div>
@@ -243,7 +246,7 @@
         
 
         <section class="bg-white">
-            <div class="container section">
+            <div class="container section"  id='aboutMe' >
                 <div class="columns is-vcentered">
                     <div class="column">
                         <figure class="image">
